@@ -33,7 +33,7 @@ class FormPersonalDetails extends Component {
             <MuiThemeProvider>
 
                 <Fragment>
-                    <AppBar title="Select a Fotomodella Item Detail" />
+                    <AppBar title="Seleziona un dettaglio elemento Fotomodella" />
 
                     <RaisedButton
                     label="FOTOMODELLA ABITO CERIMONIA"
