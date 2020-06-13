@@ -110,15 +110,15 @@ class UserForm extends Component {
                         // values={values}
                     />
                 )
-                // case 6:
-                // return (
-                //     <StepSix
-                //         nextStep={this.nextStep}
-                //         prevStep={this.prevStep}
-                //         buttonContinue={this.buttonContinue}
-                //         // values={values}
-                //     />
-                // )
+                case 6:
+                return (
+                    <StepSix
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                        buttonContinue={this.buttonContinue}
+                        // values={values}
+                    />
+                )
                 // case 7:
                 // return (
                 //     <StepSeven
