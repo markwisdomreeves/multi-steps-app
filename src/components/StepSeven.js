@@ -2,10 +2,14 @@
 import React, {Component,  Fragment} from "react";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-// import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
+import { List, ListItem } from 'material-ui/List';
+import "./index.css";
 
-class FormPersonalDetails extends Component {
+class StepEight extends Component {
+
+    state = {
+        disabled: false
+    }
     /* this is the continue method to allow the 
     user to contintue clicking the button */
     continue = e => {
@@ -22,7 +26,6 @@ class FormPersonalDetails extends Component {
         passed to this FormUserDetails Component */
         this.props.prevStep();
     };
-    
 
     render() {
         // const { values, handleChange } = this.props;
@@ -30,21 +33,37 @@ class FormPersonalDetails extends Component {
             <MuiThemeProvider>
 
                 <Fragment>
-                    <AppBar title="Enter Personal Details" />
-                    
+                    <AppBar title="Thanks for Answering all questionnnario" />
+
+                    <List>
+                        <ListItem
+                         primaryText="QUESTIONNARIO"
+                        />
+                        <ListItem
+                         primaryText="OPZIONE CATEGORIA"
+                        />
+                        <ListItem
+                         primaryText="MODA"
+                        />
+                        <ListItem
+                         primaryText="FOTOMODELLA"
+                        />
+                        <ListItem
+                         primaryText="FOTOMODELLA CLASSICA"
+                        />
+                        <ListItem
+                         primaryText="FOTOMODELLA LOOK BOOK"
+                        />
+                    </List>
+
+
                     <br />
-                    <RaisedButton
-                    label="Back"
-                    primary={false}
-                    style={styles.button}
-                    onClick={this.back}
-                    />
-                    <RaisedButton
+                    {/* <RaisedButton
                     label="Continue"
-                    primary={true}
+                    secondary={true}
                     style={styles.button}
                     onClick={this.continue}
-                    />
+                    /> */}
                 </Fragment>
             </MuiThemeProvider>
         );
@@ -57,4 +76,4 @@ const styles = {
     }
 }
 
-export default FormPersonalDetails;
+export default StepEight;

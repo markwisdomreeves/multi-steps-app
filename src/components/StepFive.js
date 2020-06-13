@@ -2,7 +2,6 @@
 import React, {Component,  Fragment} from "react";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-// import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
 class FormPersonalDetails extends Component {
@@ -42,7 +41,6 @@ class FormPersonalDetails extends Component {
                     style={styles.button}
                     onClick={this.moveToOthersItems}
                     />
-
                     <br />
                     <RaisedButton
                     label="Back"

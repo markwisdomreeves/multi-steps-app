@@ -39,7 +39,9 @@ class StepOne extends Component {
             <MuiThemeProvider>
 
                 <Fragment>
-                    <AppBar title="Select a Questionnario Detail" />
+                    <AppBar 
+                    title="Select a Questionnario Detail" 
+                    className="text-header-font-size" />
 
                     <RaisedButton
                     label="QUESTIONNARIO"
@@ -89,5 +91,6 @@ const styles = {
         margin: 15
     }
 }
+
 
 export default StepOne;

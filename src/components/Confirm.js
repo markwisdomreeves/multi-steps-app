@@ -26,7 +26,6 @@ class Comfirm extends Component {
         this.props.prevStep();
     };
     
-
     render() {
         const { values: { 
                 firstName,

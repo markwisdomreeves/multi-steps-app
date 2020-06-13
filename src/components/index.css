@@ -1,16 +1,8 @@
-
-.selected {
-    /* background: linear-gradient(to right, #74ebd5, #acb6e5) !important; */
-    border: 1px solid red;
-    background: linear-gradient(to right, #f8550a, #e011ad) !important;
+/* 
+  .text-header-font-size {
+    font-size: 2rem;
   }
 
-  .disabled {
-    opacity: 0.2;
-    cursor: not-allowed;
-  }
-
-  .enbled {
-    opacity: .9;
-    cursor: pointer;
-  }
+  .text-font-size {
+    font-size: 3rem;
+  } */
