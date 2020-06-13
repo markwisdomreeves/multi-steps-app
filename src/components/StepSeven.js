@@ -33,7 +33,7 @@ class StepEight extends Component {
             <MuiThemeProvider>
 
                 <Fragment>
-                    <AppBar title="Thanks for Answering all questionnnario" />
+                    <AppBar title="Grazie per tutto questionnnario" />
 
                     <List>
                         <ListItem
