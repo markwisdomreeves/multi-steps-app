@@ -33,7 +33,7 @@ class StepTwo extends Component {
             <MuiThemeProvider>
 
                 <Fragment>
-                    <AppBar title="Select a Categoria Detail" />
+                    <AppBar title="Seleziona un dettaglio di categoria" />
                     
                     <RaisedButton
                     label="OPZIONE CATEGORIA"
