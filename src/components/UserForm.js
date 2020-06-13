@@ -150,7 +150,7 @@ class UserForm extends Component {
             //     )
             default: 
                 return (
-                    <h1>This is the end of the Survey</h1>
+                    <h1>End of Questionnario</h1>
             ) 
         }
     }
