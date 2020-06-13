@@ -40,7 +40,7 @@ class StepOne extends Component {
 
                 <Fragment>
                     <AppBar 
-                    title="Select a Questionnario Detail" 
+                    title="Seleziona un dettaglio Questionnario" 
                     className="text-header-font-size" />
 
                     <RaisedButton
