@@ -22,6 +22,11 @@ class FormPersonalDetails extends Component {
         passed to this FormUserDetails Component */
         this.props.prevStep();
     };
+    moveToOthersItems = e => {
+        e.preventDefault()
+        this.props.buttonContinue();
+    }
+    
 
     render() {
         // const { values, handleChange } = this.props;
@@ -35,6 +40,7 @@ class FormPersonalDetails extends Component {
                     label="FOTOMODELLA CLASSICA"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
 
                     <br />

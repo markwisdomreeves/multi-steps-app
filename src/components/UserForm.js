@@ -40,6 +40,13 @@ class UserForm extends Component {
             step: step - 1
         });
     }
+
+    buttonContinue = () => {
+        const { step } = this.state;
+        this.setState({
+            step: step + 1
+        })
+    }
     
     // Handle fields change method
     // handleChange = input => e => {
@@ -61,6 +68,7 @@ class UserForm extends Component {
                 return (
                     <StepOne
                         nextStep={this.nextStep}
+                        buttonContinue={this.buttonContinue}
                         // handleChange={this.handleChange}
                         // values={values}
                     />
@@ -70,6 +78,7 @@ class UserForm extends Component {
                     <StepTwo
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
+                        buttonContinue={this.buttonContinue}
                         // handleChange={this.handleChange}
                         // values={values}
                     />
@@ -79,6 +88,7 @@ class UserForm extends Component {
                     <StepThree
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
+                        buttonContinue={this.buttonContinue}
                         // values={values}
                     />
                 )
@@ -87,6 +97,7 @@ class UserForm extends Component {
                     <StepFour
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
+                        buttonContinue={this.buttonContinue}
                         // values={values}
                     />
                 )
@@ -95,17 +106,19 @@ class UserForm extends Component {
                     <StepFive
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
+                        buttonContinue={this.buttonContinue}
                         // values={values}
                     />
                 )
-                case 6:
-                return (
-                    <StepSix
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        // values={values}
-                    />
-                )
+                // case 6:
+                // return (
+                //     <StepSix
+                //         nextStep={this.nextStep}
+                //         prevStep={this.prevStep}
+                //         buttonContinue={this.buttonContinue}
+                //         // values={values}
+                //     />
+                // )
                 // case 7:
                 // return (
                 //     <StepSeven
@@ -114,14 +127,14 @@ class UserForm extends Component {
                 //         // values={values}
                 //     />
                 // )
-                case 7:
-                return (
-                    <StepEight
-                        // nextStep={this.nextStep}
-                        // prevStep={this.prevStep}
-                        // values={values}
-                    />
-                )
+                // case 7:
+                // return (
+                //     <StepEight
+                //         nextStep={this.nextStep}
+                //         prevStep={this.prevStep}
+                //         values={values}
+                //     />
+                // )
             // case 9: 
             //     return (
             //         <Success />   

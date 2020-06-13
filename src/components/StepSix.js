@@ -22,6 +22,11 @@ class FormPersonalDetails extends Component {
         passed to this FormUserDetails Component */
         this.props.prevStep();
     };
+    moveToOthersItems = e => {
+        e.preventDefault()
+        this.props.buttonContinue();
+    }
+    
 
     render() {
         // const { values, handleChange } = this.props;
@@ -35,41 +40,49 @@ class FormPersonalDetails extends Component {
                     label="FOTOMODELLA ABITO CERIMONIA"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <RaisedButton
                     label="FOTOMODELLA LOOK BOOK"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <RaisedButton
                     label="FOTOMODELLA RITRATTO"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <RaisedButton
                     label="FOTOMODELLA IMMAGINE"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <RaisedButton
                     label="FOTOMODELLA FASHION"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <RaisedButton
                     label="FOTOMODELLA MET ART"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <RaisedButton
                     label="FOTOMODELLA BEAUTY"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <RaisedButton
                     label="FOTOMODELLA HOTESS"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     
                     <br />

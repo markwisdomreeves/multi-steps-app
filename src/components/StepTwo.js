@@ -22,6 +22,11 @@ class StepTwo extends Component {
         this.props.prevStep();
     };
 
+    moveToOthersItems = e => {
+        e.preventDefault()
+        this.props.buttonContinue();
+    }
+
     render() {
         // const { values, handleChange } = this.props;
         return (
@@ -34,6 +39,7 @@ class StepTwo extends Component {
                     label="OPZIONE CATEGORIA"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
                     />
                     <br />
                     <RaisedButton

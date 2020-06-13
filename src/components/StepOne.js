@@ -8,7 +8,7 @@ import "./index.css";
 class StepOne extends Component {
 
     state = {
-        disabled: false
+        disabled: true
     }
     /* this is the continue method to allow the 
     user to contintue clicking the button */
@@ -27,7 +27,13 @@ class StepOne extends Component {
         this.props.prevStep();
     };
 
+    moveToOthersItems = e => {
+        e.preventDefault()
+        this.props.buttonContinue();
+    }
+
     render() {
+        const { buttonContinue } = this.props;
         // const { values, handleChange } = this.props;
         return (
             <MuiThemeProvider>
@@ -39,6 +45,8 @@ class StepOne extends Component {
                     label="QUESTIONNARIO"
                     primary={true}
                     style={styles.button}
+                    onClick={this.moveToOthersItems}
+                    // disabled={!this.disabled ? 'disabled' : 'enbled'}
                     />
                     <br />
                     <RaisedButton

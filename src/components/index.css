@@ -4,3 +4,13 @@
     border: 1px solid red;
     background: linear-gradient(to right, #f8550a, #e011ad) !important;
   }
+
+  .disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+
+  .enbled {
+    opacity: .9;
+    cursor: pointer;
+  }

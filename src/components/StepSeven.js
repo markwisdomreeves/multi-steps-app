@@ -22,6 +22,7 @@ class FormPersonalDetails extends Component {
         passed to this FormUserDetails Component */
         this.props.prevStep();
     };
+    
 
     render() {
         // const { values, handleChange } = this.props;
