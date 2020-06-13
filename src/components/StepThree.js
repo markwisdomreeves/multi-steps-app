@@ -33,7 +33,7 @@ class StepThree extends Component {
             <MuiThemeProvider>
 
                 <Fragment>
-                    <AppBar title="Select a Main Categoria Detail" />
+                    <AppBar title="Seleziona un dettaglio della categoria principale" />
                     
                     <RaisedButton
                     label="MODA"
